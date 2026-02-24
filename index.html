@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive HTML5 showcase demonstrating all core HTML features">
+    <meta name="keywords" content="HTML5, semantic HTML, forms, multimedia, accessibility">
+    <meta name="author" content="HTML Expert">
+    <title>Comprehensive HTML Showcase</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Comprehensive HTML5 Showcase</h1>
+        <p>Demonstrating all core HTML features in a single document</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#semantic">Semantic Elements</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#text">Text Formatting</a></li>
+            <li><a href="#embedded">Embedded Content</a></li>
+            <li><a href="#interactive">Interactive Elements</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Semantic Elements Section -->
+        <section id="semantic">
+            <h2>Semantic HTML Elements</h2>
+            
+            <article>
+                <h3>Article Example</h3>
+                <p>This is an article element containing self-contained content.</p>
+                <aside>
+                    <h4>Aside Content</h4>
+                    <p>This is related content that is separate from the main article.</p>
+                </aside>
+            </article>
+            
+            <details>
+                <summary>Details and Summary</summary>
+                <p>This content is hidden until the user clicks the summary.</p>
+            </details>
+            
+            <figure>
+                <figcaption>Figure with Caption</figcaption>
+                <p>[Placeholder for an image or diagram]</p>
+            </figure>
+        </section>
+
+        <!-- Forms Section -->
+        <section id="forms">
+            <h2>HTML Forms</h2>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="8"><br><br>
+                    
+                    <label for="birthdate">Birth Date:</label>
+                    <input type="date" id="birthdate" name="birthdate"><br><br>
+                    
+                    <label for="favorite-color">Favorite Color:</label>
+                    <input type="color" id="favorite-color" name="favorite-color" value="#3366cc"><br><br>
+                    
+                    <label for="file-upload">Upload File:</label>
+                    <input type="file" id="file-upload" name="file-upload" accept="image/*"><br><br>
+                    
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br><br>
+                    
+                    <label>Interests:</label>
+                    <input type="checkbox" id="coding" name="interests" value="coding">
+                    <label for="coding">Coding</label>
+                    <input type="checkbox" id="design" name="interests" value="design">
+                    <label for="design">Design</label>
+                    <input type="checkbox" id="writing" name="interests" value="writing">
+                    <label for="writing">Writing</label><br><br>
+                    
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <optgroup label="Europe">
+                            <option value="uk">United Kingdom</option>
+                            <option value="fr">France</option>
+                            <option value="de">Germany</option>
+                        </optgroup>
+                        <optgroup label="North America">
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                        </optgroup>
+                    </select><br><br>
+                    
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea><br><br>
+                    
+                    <label for="rating">Rating:</label>
+                    <input type="range" id="rating" name="rating" min="1" max="10" value="7"><br><br>
+                    
+                    <button type="submit">Submit Form</button>
+                    <button type="reset">Reset Form</button>
+                    <button type="button" formnovalidate>Submit without Validation</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Multimedia Section -->
+        <section id="multimedia">
+            <h2>Multimedia Elements</h2>
+            
+            <h3>Audio Player</h3>
+            <audio controls>
+                <source src="audio-example.mp3" type="audio/mpeg">
+                <source src="audio-example.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <h3>Video Player</h3>
+            <video width="320" height="240" controls>
+                <source src="video-example.mp4" type="video/mp4">
+                <source src="video-example.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            
+            <h3>Embedded Content</h3>
+            <iframe src="https://www.example.com" title="Embedded Example" width="100%" height="300">
+                Your browser does not support iframes.
+            </iframe>
+        </section>
+
+        <!-- Tables Section -->
+        <section id="tables">
+            <h2>HTML Tables</h2>
+            
+            <table border="1">
+                <caption>Student Grades</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Student</th>
+                        <th scope="col">Math</th>
+                        <th scope="col">Science</th>
+                        <th scope="col">History</th>
+                        <th scope="col">Average</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>95</td>
+                        <td>87</td>
+                        <td>92</td>
+                        <td>91.3</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>88</td>
+                        <td>94</td>
+                        <td>89</td>
+                        <td>90.3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Class Average</th>
+                        <td>91.5</td>
+                        <td>90.5</td>
+                        <td>90.5</td>
+                        <td>90.8</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Lists Section -->
+        <section id="lists">
+            <h2>HTML Lists</h2>
+            
+            <h3>Ordered List</h3>
+            <ol>
+                <li>First step</li>
+                <li>Second step</li>
+                <li>Third step</li>
+            </ol>
+            
+            <h3>Unordered List</h3>
+            <ul>
+                <li>Apples</li>
+                <li>Bananas</li>
+                <li>Oranges</li>
+            </ul>
+            
+            <h3>Description List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </section>
+
+        <!-- Text Formatting Section -->
+        <section id="text">
+            <h2>Text Formatting</h2>
+            
+            <p>This is a paragraph with various text formatting elements:</p>
+            
+            <p>
+                <b>Bold text</b> and <strong>strong importance</strong><br>
+                <i>Italic text</i> and <em>emphasized text</em><br>
+                <u>Underlined text</u><br>
+                <s>Strikethrough text</s><br>
+                <mark>Marked text</mark><br>
+                <small>Small text</small><br>
+                <sub>Subscript text</sub> and H<sub>2</sub>O<br>
+                <sup>Superscript text</sup> and E = mc<sup>2</sup><br>
+                <code>Inline code</code><br>
+                <kbd>Keyboard input</kbd><br>
+                <samp>Sample output</samp><br>
+                <var>Variable</var><br>
+                <time datetime="2023-10-05">October 5, 2023</time><br>
+                <blockquote cite="https://www.example.com">
+                    <p>This is a blockquote with a citation.</p>
+                </blockquote>
+                <q>This is a short inline quotation.</q>
+                <abbr title="World Wide Web">WWW</abbr>
+                <address>
+                    Contact: <a href="mailto:contact@example.com">contact@example.com</a>
+                </address>
+            </p>
+            
+            <pre>
+This is preformatted text.
+It preserves      spaces
+and line breaks.
+            </pre>
+        </section>
+
+        <!-- Embedded Content Section -->
+        <section id="embedded">
+            <h2>Embedded Content</h2>
+            
+            <h3>Image</h3>
+            <img src="example.jpg" alt="Example image description" width="200" height="150">
+            
+            <h3>Mathematical Formula</h3>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+                <mo>=</mo>
+                <mfrac>
+                    <mrow>
+                        <mo>-</mo>
+                        <mi>b</mi>
+                        <mo>&#177;</mo>
+                        <msqrt>
+                            <msup>
+                                <mi>b</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>-</mo>
+                            <mn>4</mn>
+                            <mi>a</mi>
+                            <mi>c</mi>
+                        </msqrt>
+                    </mrow>
+                    <mrow>
+                        <mn>2</mn>
+                        <mi>a</mi>
+                    </mrow>
+                </mfrac>
+            </math>
+            
+            <h3>SVG Graphic</h3>
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section id="interactive">
+            <h2>Interactive Elements</h2>
+            
+            <h3>Dialog</h3>
+            <dialog open>
+                <p>This is an open dialog box.</p>
+                <form method="dialog">
+                    <button>Close</button>
+                </form>
+            </dialog>
+            
+            <h3>Progress</h3>
+            <progress value="70" max="100">70%</progress>
+            
+            <h3>Meter</h3>
+            <meter value="0.6">60%</meter>
+            
+            <h3>Map and Area</h3>
+            <img src="map-example.jpg" alt="Map of example region" width="200" height="150" usemap="#example-map">
+            <map name="example-map">
+                <area shape="rect" coords="0,0,100,100" href="region1.html" alt="Region 1">
+                <area shape="circle" coords="150,75,50" href="region2.html" alt="Region 2">
+            </map>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Footer</h2>
+        <p>&copy; 2025 Comprehensive HTML Showcase. All rights reserved.</p>
+        <address>
+            Contact: <a href="mailto:info@example.com">info@example.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>
